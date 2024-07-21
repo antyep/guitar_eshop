@@ -5,8 +5,8 @@ import { db } from "./data/db";
 
 function App() {
   const [data, setData] = useState(db);
+  const [cart, setCart] = useState([]);
 
-  console.log(db);
   return (
     <>
       <Header />
@@ -16,7 +16,7 @@ function App() {
 
         <div className="row mt-5"></div>
         {data.map((guitar) => {
-          return <Guitar key={guitar.id} guitar={guitar} />;
+          return <Guitar key={guitar.id} guitar={guitar} setCart={setCart} />;
         })}
       </main>
 
