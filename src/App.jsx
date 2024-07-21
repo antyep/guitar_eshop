@@ -1,79 +1,9 @@
+import Header from "./components/Header";
+
 function App() {
   return (
     <>
-      <header className="py-5 header">
-        <div className="container-xl">
-          <div className="row justify-content-center justify-content-md-between">
-            <div className="col-8 col-md-3">
-              <a href="index.html">
-                <img
-                  className="img-fluid"
-                  src="./public/img/logo.svg"
-                  alt="image logo"
-                />
-              </a>
-            </div>
-            <nav className="col-md-6 a mt-5 d-flex align-items-start justify-content-end">
-              <div className="cart">
-                <img
-                  className="img-fluid"
-                  src="./public/img/cart.png"
-                  alt="image cart"
-                />
-
-                <div id="cart" className="bg-white p-3">
-                  <p className="text-center">Cart is empty</p>
-                  <table className="w-100 table">
-                    <thead>
-                      <tr>
-                        <th>Image</th>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <img
-                            className="img-fluid"
-                            src="./public/img/guitarra_02.jpg"
-                            alt="Image guitarra"
-                          />
-                        </td>
-                        <td>SRV</td>
-                        <td className="fw-bold">$299</td>
-                        <td className="flex align-items-start gap-4">
-                          <button type="button" className="btn btn-dark">
-                            -
-                          </button>
-                          1
-                          <button type="button" className="btn btn-dark">
-                            +
-                          </button>
-                        </td>
-                        <td>
-                          <button className="btn btn-danger" type="button">
-                            X
-                          </button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                  <p className="text-end">
-                    Total: <span className="fw-bold">$899</span>
-                  </p>
-                  <button className="btn btn-dark w-100 mt-3 p-2">
-                    Empty cart
-                  </button>
-                </div>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       <main className="container-xl mt-5">
         <h2 className="text-center">Collection</h2>
@@ -95,7 +25,7 @@ function App() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
                 quae labore odit magnam in autem nesciunt, amet deserunt
               </p>
-              <p className="fw-black text-primary fs-3">$299</p>
+              <p className="fw-black text-primary fs-3">€299</p>
               <button type="button" className="btn btn-dark w-100">
                 Add to cart
               </button>
@@ -116,7 +46,7 @@ function App() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
                 quae labore odit magnam in autem nesciunt, amet deserunt
               </p>
-              <p className="fw-black text-primary fs-3">$299</p>
+              <p className="fw-black text-primary fs-3">€299</p>
               <button type="button" className="btn btn-dark w-100">
                 Add to cart
               </button>
@@ -139,7 +69,7 @@ function App() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
                 quae labore odit magnam in autem nesciunt, amet deserunt
               </p>
-              <p className="fw-black text-primary fs-3">$299</p>
+              <p className="fw-black text-primary fs-3">€299</p>
               <button type="button" className="btn btn-dark w-100">
                 Add to cart
               </button>
@@ -160,7 +90,7 @@ function App() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
                 quae labore odit magnam in autem nesciunt, amet deserunt
               </p>
-              <p className="fw-black text-primary fs-3">$299</p>
+              <p className="fw-black text-primary fs-3">€299</p>
               <button type="button" className="btn btn-dark w-100">
                 Add to cart
               </button>
@@ -183,7 +113,7 @@ function App() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
                 quae labore odit magnam in autem nesciunt, amet deserunt
               </p>
-              <p className="fw-black text-primary fs-3">$299</p>
+              <p className="fw-black text-primary fs-3">€299</p>
               <button type="button" className="btn btn-dark w-100">
                 Add to cart
               </button>
@@ -204,7 +134,7 @@ function App() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
                 quae labore odit magnam in autem nesciunt, amet deserunt
               </p>
-              <p className="fw-black text-primary fs-3">$299</p>
+              <p className="fw-black text-primary fs-3">€299</p>
               <button type="button" className="btn btn-dark w-100">
                 Add to cart
               </button>
@@ -225,7 +155,7 @@ function App() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
                 quae labore odit magnam in autem nesciunt, amet deserunt
               </p>
-              <p className="fw-black text-primary fs-3">$299</p>
+              <p className="fw-black text-primary fs-3">€299</p>
               <button type="button" className="btn btn-dark w-100">
                 Add to cart
               </button>
@@ -245,7 +175,7 @@ function App() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
                 quae labore odit magnam in autem nesciunt, amet deserunt
               </p>
-              <p className="fw-black text-primary fs-3">$299</p>
+              <p className="fw-black text-primary fs-3">€299</p>
               <button type="button" className="btn btn-dark w-100">
                 Add to cart
               </button>
@@ -267,7 +197,7 @@ function App() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
                 quae labore odit magnam in autem nesciunt, amet deserunt
               </p>
-              <p className="fw-black text-primary fs-3">$299</p>
+              <p className="fw-black text-primary fs-3">€299</p>
               <button type="button" className="btn btn-dark w-100">
                 Add to cart
               </button>
@@ -289,7 +219,7 @@ function App() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
                 quae labore odit magnam in autem nesciunt, amet deserunt
               </p>
-              <p className="fw-black text-primary fs-3">$299</p>
+              <p className="fw-black text-primary fs-3">€299</p>
               <button type="button" className="btn btn-dark w-100">
                 Add to cart
               </button>
@@ -309,7 +239,7 @@ function App() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
                 quae labore odit magnam in autem nesciunt, amet deserunt
               </p>
-              <p className="fw-black text-primary fs-3">$299</p>
+              <p className="fw-black text-primary fs-3">€299</p>
               <button type="button" className="btn btn-dark w-100">
                 Add to cart
               </button>
@@ -329,7 +259,7 @@ function App() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit
                 quae labore odit magnam in autem nesciunt, amet deserunt
               </p>
-              <p className="fw-black text-primary fs-3">$299</p>
+              <p className="fw-black text-primary fs-3">€299</p>
               <button type="button" className="btn btn-dark w-100">
                 Add to cart
               </button>
