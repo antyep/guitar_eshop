@@ -38,7 +38,7 @@ export default function Header() {
                         <td>
                           <img
                             className="img-fluid"
-                            src="./public/img/guitarra_02.jpg"
+                            src="./public/img/guitar_02.jpg"
                             alt="Image guitarra"
                           />
                         </td>

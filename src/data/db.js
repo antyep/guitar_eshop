@@ -2,7 +2,7 @@ export const db = [
   {
     id: 1,
     name: "Lukather",
-    image: "guitarra_01",
+    image: "guitar_01",
     description:
       "Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.",
     price: 299,
@@ -10,7 +10,7 @@ export const db = [
   {
     id: 2,
     name: "SRV",
-    image: "guitarra_02",
+    image: "guitar_02",
     description:
       "Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.",
     price: 349,
@@ -18,7 +18,7 @@ export const db = [
   {
     id: 3,
     name: "Borland",
-    image: "guitarra_03",
+    image: "guitar_03",
     description:
       "Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.",
     price: 329,
@@ -26,7 +26,7 @@ export const db = [
   {
     id: 4,
     name: "VAI",
-    image: "guitarra_04",
+    image: "guitar_04",
     description:
       "Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.",
     price: 299,
@@ -34,7 +34,7 @@ export const db = [
   {
     id: 5,
     name: "Thompson",
-    image: "guitarra_05",
+    image: "guitar_05",
     description:
       "Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.",
     price: 399,
@@ -42,7 +42,7 @@ export const db = [
   {
     id: 6,
     name: "White",
-    image: "guitarra_06",
+    image: "guitar_06",
     description:
       "Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.",
     price: 329,
@@ -50,7 +50,7 @@ export const db = [
   {
     id: 7,
     name: "Cobain",
-    image: "guitarra_07",
+    image: "guitar_07",
     description:
       "Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.",
     price: 349,
@@ -58,7 +58,7 @@ export const db = [
   {
     id: 8,
     name: "Dale",
-    image: "guitarra_08",
+    image: "guitar_08",
     description:
       "Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.",
     price: 379,
@@ -66,7 +66,7 @@ export const db = [
   {
     id: 9,
     name: "Krieger",
-    image: "guitarra_09",
+    image: "guitar_09",
     description:
       "Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.",
     price: 289,
@@ -74,7 +74,7 @@ export const db = [
   {
     id: 10,
     name: "Campbell",
-    image: "guitarra_10",
+    image: "guitar_10",
     description:
       "Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.",
     price: 349,
@@ -82,7 +82,7 @@ export const db = [
   {
     id: 11,
     name: "Reed",
-    image: "guitarra_11",
+    image: "guitar_11",
     description:
       "Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.",
     price: 399,
@@ -90,7 +90,7 @@ export const db = [
   {
     id: 12,
     name: "Hazel",
-    image: "guitarra_12",
+    image: "guitar_12",
     description:
       "Morbi ornare augue nisl, vel elementum dui mollis vel. Curabitur non ex id eros fermentum hendrerit.",
     price: 379,

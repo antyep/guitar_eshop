@@ -16,7 +16,7 @@ function App() {
 
         <div className="row mt-5"></div>
         {data.map((guitar) => {
-          return <Guitar guitar={guitar} />;
+          return <Guitar key={guitar.id} guitar={guitar} />;
         })}
       </main>
 
