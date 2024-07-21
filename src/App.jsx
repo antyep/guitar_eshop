@@ -15,7 +15,9 @@ function App() {
         <h2 className="text-center">Collection</h2>
 
         <div className="row mt-5"></div>
-        <Guitar />
+        {data.map((guitar) => {
+          return <Guitar guitar={guitar} />;
+        })}
       </main>
 
       <footer className="bg-dark mt-5 py-5">
