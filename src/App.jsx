@@ -7,6 +7,10 @@ function App() {
   const [data, setData] = useState(db);
   const [cart, setCart] = useState([]);
 
+  function addToCart() {
+    console.log("Adding");
+  }
+
   return (
     <>
       <Header />
@@ -14,10 +18,18 @@ function App() {
       <main className="container-xl mt-5">
         <h2 className="text-center">Collection</h2>
 
-        <div className="row mt-5"></div>
-        {data.map((guitar) => {
-          return <Guitar key={guitar.id} guitar={guitar} setCart={setCart} />;
-        })}
+        <div className="row mt-5">
+          {data.map((guitar) => {
+            return (
+              <Guitar
+                key={guitar.id}
+                guitar={guitar}
+                setCart={setCart}
+                addToCart={addToCart}
+              />
+            );
+          })}
+        </div>
       </main>
 
       <footer className="bg-dark mt-5 py-5">
