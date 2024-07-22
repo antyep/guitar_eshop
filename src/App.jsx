@@ -7,9 +7,9 @@ function App() {
   const [data, setData] = useState(db);
   const [cart, setCart] = useState([]);
 
-  function addToCart() {
-    console.log("Adding");
-  }
+  const addToCart = (item) => {
+    setCart((prevCart) => [...prevCart, item]);
+  };
 
   return (
     <>
