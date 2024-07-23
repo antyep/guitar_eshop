@@ -1,7 +1,11 @@
+import { useMemo } from "react";
+
 export default function Header({ cart }) {
-  const isEmpty = () => cart.length === 0;
-  const carTotal = () =>
-    cart.reduce((total, item) => total + item.quantity * item.price, 0);
+  const isEmpty = useMemo(() => cart.length === 0, [cart]);
+  const carTotal = useMemo(
+    () => cart.reduce((total, item) => total + item.quantity * item.price, 0),
+    [cart]
+  );
 
   return (
     <>
@@ -26,7 +30,7 @@ export default function Header({ cart }) {
                 />
 
                 <div id="cart" className="bg-white p-3">
-                  {isEmpty() ? (
+                  {isEmpty ? (
                     <p className="text-center">Cart is empty</p>
                   ) : (
                     <>
@@ -74,7 +78,7 @@ export default function Header({ cart }) {
                         </tbody>
                       </table>
                       <p className="text-end">
-                        Total: <span className="fw-bold">€{carTotal()}</span>
+                        Total: <span className="fw-bold">€{carTotal}</span>
                       </p>
                       <button className="btn btn-dark w-100 mt-3 p-2">
                         Empty cart
