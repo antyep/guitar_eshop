@@ -8,15 +8,21 @@ function App() {
   const [cart, setCart] = useState([]);
 
   const addToCart = (item) => {
-    const itemExists = cart.findIndex((guitar) => guitar.id === item.id) >= 0;
-    itemExists ? console.log("Exists") : (item.quantity = 1),
-      setCart((prevCart) => [...prevCart, item]);
+    const itemExists = cart.findIndex((guitar) => guitar.id === item.id);
+    const updatedCart =
+      itemExists >= 0
+        ? cart.map((guitar, index) =>
+            index === itemExists
+              ? { ...guitar, quantity: guitar.quantity + 1 }
+              : guitar
+          )
+        : [...cart, { ...item, quantity: 1 }];
+    setCart(updatedCart);
   };
 
   return (
     <>
       <Header />
-
       <main className="container-xl mt-5">
         <h2 className="text-center">Collection</h2>
 
@@ -33,7 +39,6 @@ function App() {
           })}
         </div>
       </main>
-
       <footer className="bg-dark mt-5 py-5">
         <div className="container-xl">
           <p className="text-white text-center fs-4 mt-4 m-md-0">
