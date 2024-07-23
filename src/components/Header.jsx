@@ -1,4 +1,7 @@
 export default function Header({ cart }) {
+  
+  const isEmpty = () =>  cart.length === 0 ?
+
   return (
     <>
       <header className="py-5 header">
@@ -22,7 +25,7 @@ export default function Header({ cart }) {
                 />
 
                 <div id="cart" className="bg-white p-3">
-                  {cart.length === 0 ? (
+                  {isEmpty() ? (
                     <p className="text-center">Cart is empty</p>
                   ) : (
                     <>
