@@ -20,6 +20,10 @@ function App() {
     setCart(updatedCart);
   };
 
+  function removeFromCart() {
+    console.log("meow");
+  }
+
   return (
     <>
       <Header cart={cart} />
@@ -34,6 +38,7 @@ function App() {
                 guitar={guitar}
                 setCart={setCart}
                 addToCart={addToCart}
+                removeFromCart={removeFromCart}
               />
             );
           })}
