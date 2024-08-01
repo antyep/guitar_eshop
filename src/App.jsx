@@ -20,13 +20,13 @@ function App() {
     setCart(updatedCart);
   };
 
-  function removeFromCart() {
-    console.log("meow");
-  }
+  const removeFromCart = (id) => {
+    console.log("meow", id);
+  };
 
   return (
     <>
-      <Header cart={cart} />
+      <Header cart={cart} removeFromCart={removeFromCart} />
       <main className="container-xl mt-5">
         <h2 className="text-center">Collection</h2>
 
@@ -38,7 +38,6 @@ function App() {
                 guitar={guitar}
                 setCart={setCart}
                 addToCart={addToCart}
-                removeFromCart={removeFromCart}
               />
             );
           })}
