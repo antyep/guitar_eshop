@@ -24,9 +24,20 @@ function App() {
     setCart((prevCart) => prevCart.filter((guitar) => guitar.id !== id));
   };
 
+  const increaseQuantity = (id) => {
+    const updatedCart = cart.map((item) =>
+      item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+    );
+    setCart(updatedCart);
+  };
+
   return (
     <>
-      <Header cart={cart} removeFromCart={removeFromCart} />
+      <Header
+        cart={cart}
+        removeFromCart={removeFromCart}
+        increaseQuantity={increaseQuantity}
+      />
       <main className="container-xl mt-5">
         <h2 className="text-center">Collection</h2>
 
