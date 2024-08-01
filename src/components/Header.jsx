@@ -69,7 +69,7 @@ export default function Header({ cart, removeFromCart }) {
                                 <button
                                   className="btn btn-danger"
                                   type="button"
-                                  onClick={removeFromCart``}
+                                  onClick={() => removeFromCart(guitar.id)}
                                 >
                                   X
                                 </button>

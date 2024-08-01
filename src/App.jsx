@@ -21,7 +21,7 @@ function App() {
   };
 
   const removeFromCart = (id) => {
-    console.log("meow", id);
+    setCart((prevCart) => prevCart.filter((guitar) => guitar.id !== id));
   };
 
   return (
