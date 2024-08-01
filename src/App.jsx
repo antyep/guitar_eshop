@@ -7,6 +7,8 @@ function App() {
   const [data, setData] = useState(db);
   const [cart, setCart] = useState([]);
 
+  const MIN_ITEMS = 1;
+
   const addToCart = (item) => {
     const itemExists = cart.findIndex((guitar) => guitar.id === item.id);
     const updatedCart =
@@ -24,6 +26,13 @@ function App() {
     setCart((prevCart) => prevCart.filter((guitar) => guitar.id !== id));
   };
 
+  const decreaseQuantity = (id) => {
+    const updatedCart = cart.map((item) =>
+      item.id === id ? { ...item, quantity: item.quantity - 1 } : item
+    );
+    setCart(updatedCart);
+  };
+
   const increaseQuantity = (id) => {
     const updatedCart = cart.map((item) =>
       item.id === id ? { ...item, quantity: item.quantity + 1 } : item
@@ -37,6 +46,7 @@ function App() {
         cart={cart}
         removeFromCart={removeFromCart}
         increaseQuantity={increaseQuantity}
+        decreaseQuantity={decreaseQuantity}
       />
       <main className="container-xl mt-5">
         <h2 className="text-center">Collection</h2>
