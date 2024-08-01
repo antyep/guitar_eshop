@@ -22,7 +22,7 @@ export default function Header({
               <a href="index.html">
                 <img
                   className="img-fluid"
-                  src="./public/img/logo.svg"
+                  src="./img/logo.svg"
                   alt="image guitar"
                 />
               </a>
@@ -31,7 +31,7 @@ export default function Header({
               <div className="cart">
                 <img
                   className="img-fluid"
-                  src="./public/img/cart.png"
+                  src="./img/cart.png"
                   alt="image cart"
                 />
 
