@@ -99,7 +99,7 @@ export default function Header({
                         className="btn btn-dark w-100 mt-3 p-2"
                         onClick={clearCart}
                       >
-                        Empty cart
+                        Clear cart
                       </button>
                     </>
                   )}
