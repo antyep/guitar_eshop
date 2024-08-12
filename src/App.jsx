@@ -11,6 +11,8 @@ function App() {
     decreaseQuantity,
     increaseQuantity,
     clearCart,
+    isEmpty,
+    carTotal,
   } = useCart();
 
   return (
@@ -21,6 +23,8 @@ function App() {
         increaseQuantity={increaseQuantity}
         decreaseQuantity={decreaseQuantity}
         clearCart={clearCart}
+        isEmpty={isEmpty}
+        carTotal={carTotal}
       />
       <main className="container-xl mt-5">
         <h2 className="text-center">Collection</h2>
