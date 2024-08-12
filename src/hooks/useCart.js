@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { db } from "../data/db";
 
-export const userCart = () => {
+export const useCart = () => {
   const initialState = () => {
     const localStorageCart = localStorage.getItem("cart");
     return localStorageCart ? JSON.parse(localStorageCart) : [];

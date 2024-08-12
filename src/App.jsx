@@ -1,6 +1,6 @@
 import Guitar from "./components/Guitar";
 import Header from "./components/Header";
-import { userCart } from "./hooks/useCart";
+import { useCart } from "./hooks/useCart";
 
 function App() {
   const {
@@ -11,7 +11,7 @@ function App() {
     decreaseQuantity,
     increaseQuantity,
     clearCart,
-  } = userCart();
+  } = useCart();
 
   return (
     <>
